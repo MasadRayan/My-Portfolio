@@ -181,6 +181,50 @@ const socialImgs = [
   },
 ];
 
+const techStackImgs = [
+  {
+    name: "Tailwind CSS",
+    imgPath: "/assets/logos/tailwindcss.svg",
+  },
+  {
+    name: "HTML",
+    imgPath: "/assets/logos/html5.svg",
+  },
+  {
+    name: "React",
+    imgPath: "/assets/logos/react.svg",
+  },
+  {
+    name: "JavaScript",
+    imgPath: "/assets/logos/javascript.svg",
+  },
+  {
+    name: "Git",
+    imgPath: "/assets/logos/git.svg",
+  },
+  {
+    name: "VS Code",
+    imgPath: "/assets/logos/visualstudiocode.svg",
+  },
+  {
+    name: "Three JS",
+    imgPath: "/assets/three.png",
+  },
+  {
+    name: "Dot Net",
+    imgPath: "/assets/logos/dotnet.svg",
+  },
+  {
+    name: "Microsoft",
+    imgPath: "/assets/logos/microsoft.svg",
+  },
+  {
+    name: "Stripe",
+    imgPath: "/assets/logos/stripe.svg",
+  },
+];
+
+
 
 export {
   expCards,
@@ -188,4 +232,5 @@ export {
   techStackIcons,
   navLinks,
   socialImgs,
+  techStackImgs,
 };

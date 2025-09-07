@@ -53,9 +53,9 @@ const HeroText = () => {
         </div>
       </div>
       {/* Mobile View */}
-      <div className="flex- flex-col space-y-6 md:hidden">
+      <div className="flex- flex-col space-y-6 md:hidden ">
         <motion.p
-          className="text-4xl font-medium"
+          className="text-5xl font-medium"
           variants={variants}
           initial="hidden"
           animate="visible"
@@ -65,7 +65,7 @@ const HeroText = () => {
         </motion.p>
         <div>
           <motion.p
-            className="text-5xl font-black text-neutral-300"
+            className="text-3xl font-black "
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -81,7 +81,7 @@ const HeroText = () => {
           >
             <FlipWords
               words={words}
-              className="font-bold text-white text-7xl"
+              className="font-bold text-white text-4xl"
             />
           </motion.div>
           <motion.p

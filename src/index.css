@@ -217,7 +217,7 @@ body {
   }
 
   &.not-scrolled {
-    @apply md:top-10 bg-transparent;
+    @apply  bg-transparent;
   }
 
   .inner {

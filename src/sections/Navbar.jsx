@@ -36,6 +36,7 @@ const Navbar = () => {
                     </ul>
                 </nav>
 
+
                 <a
                     href="/resume.pdf" // path relative to public folder
                     download="Masad_Rayan_Resume.pdf" // file name after download
