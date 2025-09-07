@@ -45,7 +45,7 @@ export default function Projects() {
       {/* Project 1 */}
       <div
         ref={div1ref}
-        className="grid md:grid-cols-2 gap-6 bg-slate-900 rounded-2xl shadow-xl overflow-hidden max-w-7xl mx-auto mt-5 p-4 md:p-8 "
+        className="grid md:grid-cols-2 border border-[#2a0e61] rounded-2xl shadow-xl overflow-hidden max-w-7xl mx-auto mt-5 p-4 md:p-8 "
       >
         {/* Left - Image */}
         <div className="relative w-full h-72 md:h-full">
@@ -96,7 +96,7 @@ export default function Projects() {
       {/* Project 2 */}
       <div
         ref={div2ref}
-        className="grid md:grid-cols-2 gap-6 bg-slate-900 rounded-2xl shadow-xl overflow-hidden max-w-7xl mx-auto mt-5 p-4 md:p-8"
+        className="grid md:grid-cols-2 gap-6 border border-[#2a0e61] rounded-2xl shadow-xl overflow-hidden max-w-7xl mx-auto mt-5 p-4 md:p-8"
       >
         <div className="relative w-full h-72 md:h-full">
           <img src="/assets/project2.png" alt="Bookoro" className="w-full h-full object-cover" />
@@ -149,7 +149,7 @@ export default function Projects() {
       {/* Project 3 */}
       <div
         ref={div3ref}
-        className="grid md:grid-cols-2 gap-6 bg-slate-900 rounded-2xl shadow-xl overflow-hidden max-w-7xl mx-auto mt-5 p-4 md:p-8"
+        className="grid md:grid-cols-2 gap-6 border border-[#2a0e61] rounded-2xl shadow-xl overflow-hidden max-w-7xl mx-auto mt-5 p-4 md:p-8"
       >
         <div className="relative w-full h-72 md:h-full">
           <img src="/assets/project3.png" alt="Hobby Hive" className="w-full h-full object-cover" />
