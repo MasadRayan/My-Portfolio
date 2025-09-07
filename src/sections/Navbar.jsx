@@ -25,7 +25,7 @@ const Navbar = () => {
 
                 <nav className='desktop'>
                     <ul>
-                        {navLinks.map(({link, name}) => (
+                        {navLinks.map(({ link, name }) => (
                             <li key={name} className='group'>
                                 <a href={link}>
                                     <span>{name}</span>
@@ -36,11 +36,16 @@ const Navbar = () => {
                     </ul>
                 </nav>
 
-                <a href="#contact" className='contact-btn group'>
-                    <div className='inner'>
-                        <span>Contact me</span>
+                <a
+                    href="/resume.pdf" // path relative to public folder
+                    download="Masad_Rayan_Resume.pdf" // file name after download
+                    className="contact-btn group"
+                >
+                    <div className="inner">
+                        <span>Download CV</span>
                     </div>
                 </a>
+
             </div>
         </header>
     );

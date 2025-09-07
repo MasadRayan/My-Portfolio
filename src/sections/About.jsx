@@ -106,21 +106,21 @@ const About = () => {
                         <h2 className="lol text-xl font-semibold">More Information</h2>
                         <div className="flex gap-4 mt-3">
                             <a
-                                href="https://linkedin.com"
+                                href="https://www.linkedin.com/in/masad-rayan/"
                                 target="_blank"
                                 className="link bg-blue-500 p-3 rounded-full hover:scale-110 transition"
                             >
                                 <FaLinkedin size={22} />
                             </a>
                             <a
-                                href="https://github.com"
+                                href="https://github.com/MasadRayan"
                                 target="_blank"
                                 className="link bg-gray-800 p-3 rounded-full hover:scale-110 transition"
                             >
                                 <FaGithub size={22} />
                             </a>
                             <a
-                                href="https://facebook.com"
+                                href="https://www.facebook.com/masad.rayan.2024"
                                 target="_blank"
                                 className="link bg-blue-600 p-3 rounded-full hover:scale-110 transition"
                             >

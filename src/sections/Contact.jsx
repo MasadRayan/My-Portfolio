@@ -58,7 +58,7 @@ const Contact = () => {
 
         <div className="grid-12-cols mt-16">
           {/* Left Side - Form & Info */}
-          <div className="xl:col-span-6 card-border rounded-xl p-4 relative z-[100]">
+          <div className="xl:col-span-6 card-border rounded-xl p-4 relative z-[100] bg-transparen">
             <form ref={formRef} onSubmit={handleSubmit} className="w-full flex flex-col gap-5">
               <div>
                 <label htmlFor="name">Your name</label>
