@@ -36,7 +36,7 @@ export default function Projects() {
         .from(spans, { opacity: 0, y: 20, duration: 0.4, stagger: 0.1 }, "-=0.2")
         .from(buttons, { opacity: 0, y: 20, duration: 0.4, stagger: 0.1 }, "-=0.2");
     });
-  });
+  }, []);
 
   return (
     <section id="projects">

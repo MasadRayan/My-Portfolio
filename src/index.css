@@ -59,6 +59,9 @@
     }
   }
 }
+ .card-border {
+    @apply border border-black-50 bg-black-100;
+  }
 
 /* ------------------------------
    Gradients
@@ -131,6 +134,27 @@ body {
 .btn {
   @apply relative px-1 py-4 text-sm text-center rounded-full font-extralight bg-primary w-[12rem] cursor-pointer overflow-hidden;
 }
+
+/* grid */
+.grid-base {
+    @apply grid grid-cols-1;
+  }
+  .grid-2-cols {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+  }
+  .grid-3-cols {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6;
+  }
+  .grid-3-cols-md-tight {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0;
+  }
+  .grid-4-cols {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7;
+  }
+  .grid-12-cols {
+    @apply grid grid-cols-1 xl:grid-cols-12 gap-10;
+  }
+
 
 /* About Section */
 .grid-1 {
@@ -235,9 +259,6 @@ body {
   @apply px-5 md:px-10 md:mt-40 mt-20;
 }
 
-.card-border {
-  @apply border border-black-50 bg-black-100;
-}
 
 /* Timeline vertical line */
 /* Timeline wrapper: keeps the vertical line aligned */
@@ -285,7 +306,6 @@ body {
   @apply relative z-20 cursor-pointer;
 }
 
-
 .cta-button {
   @apply px-4 py-4 rounded-lg bg-black-200 flex justify-center items-center relative cursor-pointer overflow-hidden;
 
@@ -305,6 +325,7 @@ body {
     }
   }
 }
+
 
 /* ------------------------------
    Cards & Glows

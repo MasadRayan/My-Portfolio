@@ -58,7 +58,7 @@ const About = () => {
             onLeaveBack: () => tl.reverse(), // play backward when scrolling up
             // markers: true, // set true for debugging
         });
-    });
+    }, []);
 
 
     return (
