@@ -1,22 +1,46 @@
-import { mySocials } from "../constants";
+import { useEffect, useState } from "react";
+import { socialImgs } from "../constants";
+
 const Footer = () => {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(new Date());
+    }, 1000); // update every second
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="flex flex-wrap items-center justify-between gap-5 pb-3 text-sm text-neutral-400 c-space">
-      <div className="mb-4 bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
-      <div className="flex gap-2">
-        <p>Terms & Conditions</p>
-        <p>|</p>
-        <p>Privacy Policy</p>
+    <footer className="footer bg-[#] relative z-[999]">
+      <div className="footer-container ">
+        {/* Local time */}
+        <div className="flex flex-col justify-center">
+          <p className="text-center md:text-start">
+            Local Time: &nbsp;&nbsp;
+            {time.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" })}
+          </p>
+        </div>
+
+        {/* Socials */}
+        <div className="socials">
+          {socialImgs.map((socialImg, index) => (
+            <a href={socialImg.link} target="_blank" key={index}>
+              <div className="icon">
+                <img src={socialImg.imgPath} alt="social icon" />
+              </div>
+            </a>
+          ))}
+        </div>
+
+        {/* Copyright */}
+        <div className="text-center md:text-right">
+          © {new Date().getFullYear()} Masad Rayan. All rights reserved.
+        </div>
+
       </div>
-      <div className="flex gap-3">
-        {mySocials.map((social, index) => (
-          <a href={social.href} key={index}>
-            <img src={social.icon} className="w-5 h-5" alt={social.name} />
-          </a>
-        ))}
-      </div>
-      <p>© 2025 Ali. All rights reserved.</p>
-    </section>
+    </footer>
   );
 };
 

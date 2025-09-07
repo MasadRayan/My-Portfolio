@@ -59,9 +59,10 @@
     }
   }
 }
- .card-border {
-    @apply border border-black-50 bg-black-100;
-  }
+
+.card-border {
+  @apply border border-black-50 bg-black-100;
+}
 
 /* ------------------------------
    Gradients
@@ -137,23 +138,28 @@ body {
 
 /* grid */
 .grid-base {
-    @apply grid grid-cols-1;
-  }
-  .grid-2-cols {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-6;
-  }
-  .grid-3-cols {
-    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6;
-  }
-  .grid-3-cols-md-tight {
-    @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0;
-  }
-  .grid-4-cols {
-    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7;
-  }
-  .grid-12-cols {
-    @apply grid grid-cols-1 xl:grid-cols-12 gap-10;
-  }
+  @apply grid grid-cols-1;
+}
+
+.grid-2-cols {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+}
+
+.grid-3-cols {
+  @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6;
+}
+
+.grid-3-cols-md-tight {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0;
+}
+
+.grid-4-cols {
+  @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7;
+}
+
+.grid-12-cols {
+  @apply grid grid-cols-1 xl:grid-cols-12 gap-10;
+}
 
 
 /* About Section */
@@ -380,4 +386,30 @@ body {
 
 .hero-badge {
   @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
+}
+
+
+/* footer */
+.footer {
+  @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-20 xl:px-20 flex items-center justify-between;
+
+  .footer-container {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0 w-full items-center;
+  }
+
+  p {
+    @apply text-center md:text-start cursor-pointer;
+  }
+
+  .socials {
+    @apply flex items-center justify-center gap-5;
+
+    .icon {
+      @apply border border-black-50 bg-black-100 flex justify-center items-center rounded-xl size-10 md:size-12 cursor-pointer transition-all duration-500 hover:bg-black-50;
+    }
+
+    img {
+      @apply inline-block;
+    }
+  }
 }

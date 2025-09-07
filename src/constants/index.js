@@ -158,10 +158,34 @@ const expLogos = [
   },
 ];
 
+const socialImgs = [
+  {
+    name: "insta",
+    imgPath: "/assets/insta.png",
+    link: 'https://www.instagram.com/masad_rayan/'
+  },
+  {
+    name: "fb",
+    imgPath: "/assets/fb.png",
+    link: 'https://www.facebook.com/masad.rayan.2024'
+  },
+  {
+    name: "x",
+    imgPath: "/assets/x.png",
+    link: 'https://x.com/Masad_Rayan'
+  },
+  {
+    name: "linkedin",
+    imgPath: "/assets/linkedin.png",
+    link: 'https://www.linkedin.com/in/masad-rayan/'
+  },
+];
+
 
 export {
   expCards,
   expLogos,
   techStackIcons,
   navLinks,
+  socialImgs,
 };
