@@ -7,6 +7,7 @@ import Contact from "./sections/Contact";
 import Footer from './sections/Footer';
 import ExperienceSection from "./sections/ExperienceSection";
 import { Particles } from "./components/Particles";
+import TechStack from "./sections/TechStack";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
         <About />
         <Projects />
         <ExperienceSection />
+        <TechStack />
         <Contact />
         <Footer />
       </div>
