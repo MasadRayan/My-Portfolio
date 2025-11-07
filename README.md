@@ -1,7 +1,7 @@
 # 🌌 Masad Rayan 3D Portfolio  
 
 ### 🔗 Live Preview  
-[🚀 View Portfolio](https://your-portfolio-link.com)
+[🚀 View Portfolio](https://preeminent-alpaca-734515.netlify.app/)
 
 ---
 
