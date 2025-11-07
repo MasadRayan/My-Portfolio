@@ -17,7 +17,7 @@ const App = () => {
   const isTablet = useMediaQuery({ minWidth: 481, maxWidth: 1024 });
 
   // set particle count based on screen
-  const particleQuantity = isMobile ? 300 : isTablet ? 1000 : 2000;
+  const particleQuantity = isMobile ? 200 : isTablet ? 1000 : 2000;
   return (
     <div className="relative">
       {/* Particles background */}
